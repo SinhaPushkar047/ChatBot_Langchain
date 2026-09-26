@@ -1,4 +1,3 @@
-::: {align="center"}
 # Phoenix AI --- Chatbot
 
 ### Your AI-powered conversation companion
@@ -123,11 +122,3 @@ Chatbot](https://phoenix-ai-langchain.streamlit.app/)**
 See the [`LICENSE`](LICENSE) file for licensing information.
 
 ------------------------------------------------------------------------
-
-::: {align="center"}
-**Built with Python, LangChain, Hugging Face, and Streamlit.**
-
-[Launch Phoenix AI](https://phoenix-ai-langchain.streamlit.app/) ·
-[GitHub
-Repository](https://github.com/SinhaPushkar047/ChatBot_Langchain)
-:::
