@@ -1,10 +1,12 @@
 import streamlit as st
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
-from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
-from dotenv import load_dotenv
+from langchain_ollama import ChatOllama
 
-load_dotenv()
+model = ChatOllama(
+    model="llama3.2:3b",
+    temperature=0.5
+)
 
 from pathlib import Path
 
@@ -19,14 +21,7 @@ def load_css():
 
 load_css()
 
-llm = HuggingFaceEndpoint(
-    repo_id="openai/gpt-oss-120b",
-    provider="groq",
-    task="text-generation",
-    max_new_tokens=1000
-)
 
-model = ChatHuggingFace(llm=llm)
 
 prompt = ChatPromptTemplate.from_messages([
     SystemMessage(content="You are a helpful AI assistant."),
