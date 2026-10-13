@@ -3,3 +3,4 @@ langchain-core
 langchain-huggingface
 python-dotenv
 langchain-ollama
+langchain-groq

@@ -1,12 +1,10 @@
 import streamlit as st
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
-from langchain_ollama import ChatOllama
+from langchain_groq import ChatGroq
+from dotenv import load_dotenv
 
-model = ChatOllama(
-    model="llama3.2:3b",
-    temperature=0.5
-)
+load_dotenv()
 
 from pathlib import Path
 
@@ -21,6 +19,10 @@ def load_css():
 
 load_css()
 
+model=ChatGroq(
+    model="openai/gpt-oss-120b",
+    temperature=0.2
+)
 
 
 prompt = ChatPromptTemplate.from_messages([
