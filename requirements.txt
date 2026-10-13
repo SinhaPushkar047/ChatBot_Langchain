@@ -1,6 +1,4 @@
 streamlit
 langchain-core
-langchain-huggingface
 python-dotenv
-langchain-ollama
-langchain-groq
+langchain-nvidia-ai-endpoints

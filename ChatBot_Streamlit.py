@@ -1,7 +1,7 @@
 import streamlit as st
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
-from langchain_groq import ChatGroq
+from langchain_nvidia import ChatNVIDIA
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -19,9 +19,9 @@ def load_css():
 
 load_css()
 
-model=ChatGroq(
-    model="openai/gpt-oss-120b",
-    temperature=0.2
+model= ChatNVIDIA(
+    model='nvidia/nemotron-3-ultra-550b-a55b',
+    temperature=1.8
 )
 
 
