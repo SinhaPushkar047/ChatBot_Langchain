@@ -2,7 +2,7 @@
 
 ### Your AI-powered conversation companion
 
-A conversational AI chatbot built with **LangChain**, **Hugging Face**,
+A conversational AI chatbot built with **LangChain**, **NVIDIA-NIM**,
 and **Streamlit**.
 
 [**Launch the Live App**](https://phoenix-ai-langchain.streamlit.app/) ·
@@ -29,7 +29,7 @@ experience.
 -   **Conversation history** --- Keep track of messages during your chat
     session.
 -   **LLM integration** --- Connects to a language model through
-    LangChain and NvidiaNM.
+    LangChain and NvidiaNIM.
 -   **Custom interface styling** --- CSS-powered visual design.
 -   **Web-based experience** --- Access the chatbot from your browser
     without setting up the project locally.
