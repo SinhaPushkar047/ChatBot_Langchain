@@ -29,7 +29,7 @@ experience.
 -   **Conversation history** --- Keep track of messages during your chat
     session.
 -   **LLM integration** --- Connects to a language model through
-    LangChain and Hugging Face.
+    LangChain and NvidiaNM.
 -   **Custom interface styling** --- CSS-powered visual design.
 -   **Web-based experience** --- Access the chatbot from your browser
     without setting up the project locally.
@@ -88,7 +88,7 @@ variable your application expects.
 Example (replace the variable name if your code uses a different one):
 
 ``` env
-HF_TOKEN=your_huggingface_token
+NVIDIA_API_TOKEN=your nvidia-api token
 ```
 
 Keep your token private. Never commit `.env` or paste API credentials
