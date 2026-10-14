@@ -21,12 +21,13 @@ load_css()
 
 model= ChatNVIDIA(
     model='nvidia/nemotron-3-ultra-550b-a55b',
+    max_tokens=1000,
     temperature=1.8
 )
 
 
 prompt = ChatPromptTemplate.from_messages([
-    SystemMessage(content="You are a helpful AI assistant."),
+    SystemMessage(content="You are a helpful AI assistant who generate response only in english language until and unless specified by the user."),
     MessagesPlaceholder(variable_name="chat_history")
 ])
 
